@@ -1,12 +1,12 @@
 import "./App.css";
 import { ICONS } from "./assets";
-import { sidebar_list, subSidebar_list } from "./constants/lists";
+import { sidebar_list, subSidebar_list } from "./constants/Lists";
 
 import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
 import SubSidebar from "./components/SubSidebar";
 import ProductForm from "./modules/ProductForm/ProductForm";
 import ProductPreview from "./components/ProductPreview";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
