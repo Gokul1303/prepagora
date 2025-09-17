@@ -1,26 +1,22 @@
-import React from 'react';
+import React from "react";
+import { ICONS } from "../../assets";
 
-const FormFooter = ({ currentStep, onBack, onNext, isLastStep }) => {
+const FormFooter = ({}) => {
   return (
-    <div className="mt-8 pt-5 border-t border-gray-200 flex justify-between">
-      {currentStep > 1 ? (
-        <button
-          type="button"
-          onClick={onBack}
-          className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-        >
-          Back
-        </button>
-      ) : (
-        <div></div>
-      )}
-      
+    <div className="mt-8 pt-5 border-t border-[var(--border)] flex items-end justify-end gap-3">
       <button
         type="button"
-        onClick={onNext}
-        className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        className=" items-center px-4 py-2 border border-[#32383E]  text-sm font-[550] rounded-full text-[var(--title)] bg-white"
       >
-        {isLastStep ? 'Submit' : 'Next'}
+        Save & Continue Later
+      </button>
+
+      <button
+        type="button"
+        className="flex items-center justify-center py-2 px-4 text-sm font-[550] rounded-full text-white bg-[#D92C27] gap-2"
+      >
+        Continue
+        <img src={ICONS.Vector} alt="Vector" className="w-3 h-3" />
       </button>
     </div>
   );

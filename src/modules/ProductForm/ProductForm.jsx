@@ -1,6 +1,7 @@
 import { ICONS } from "../../assets";
 import { Input } from "../../components/Input";
 import { Title } from "../../components/Title";
+import FormFooter from "./FormFooter";
 
 const formSections = [
   {
@@ -99,7 +100,7 @@ const formSections = [
 
 export default function ProductInformationForm() {
   return (
-    <div className="max-w-5xl mx-auto border rounded-lg shadow-sm p-6 bg-white ">
+    <div className="max-w-5xl mx-auto   shadow-sm p-6 bg-white ">
       {formSections.map((section, i) => (
         <div key={i} className="mb-8 ">
           {section?.title && (
@@ -121,6 +122,9 @@ export default function ProductInformationForm() {
             section.footer.map((field, idx) => <Input key={idx} {...field} />)}
         </div>
       ))}
+      <div>
+        <FormFooter />
+      </div>
     </div>
   );
 }

@@ -9,10 +9,6 @@ import Voice from "./header/voice.svg";
 import Chevron from "./header/chevron.svg";
 import Rfq from "./header/rfq.svg";
 import User from "./header/user-circle.svg";
-import Close from "./close.svg";
-import Expand from "./expand.svg";
-import Thumbnail1 from "./thumbnail-1.svg";
-import Thumbnail2 from "./thumbnail-2.svg";
 
 // Sidebar
 import Home from "./sidebar/home.svg";
@@ -28,14 +24,22 @@ import Support from "./sidebar/support.svg";
 import Setting from "./sidebar/setting.svg";
 
 // SubSidebar
-import ArrowLeft from "./arrow-left.svg";
-import Incompleted from "./incompleted.svg";
+import ArrowLeft from "./subsidebar/arrow-left.svg";
+import Incompleted from "./subsidebar/incompleted.svg";
 
 // ProductForm
-import DocumentIcon from "./document.svg";
-import SearchLight from "./ed.svg";
-import Selector from "./selector.svg";
-import Info from "./info.svg";
+import DocumentIcon from "./info/document.svg";
+import SearchLight from "./info/ed.svg";
+import Selector from "./info/selector.svg";
+import Info from "./info/info.svg";
+import Vector from "./info/Vector.svg";
+import Ai from "./info/Ai.svg";
+
+// Preview
+import Close from "./preview/close.svg";
+import Expand from "./preview/expand.svg";
+import Thumbnail1 from "./preview/thumbnail-1.svg";
+import Thumbnail2 from "./preview/thumbnail-2.svg";
 
 export const ICONS = {
   Logo: Logo,
@@ -49,10 +53,6 @@ export const ICONS = {
   Chevron: Chevron,
   Rfq: Rfq,
   User: User,
-  Close: Close,
-  Expand: Expand,
-  Thumbnail1: Thumbnail1,
-  Thumbnail2: Thumbnail2,
 
   // Sidebar
   Home: Home,
@@ -76,4 +76,12 @@ export const ICONS = {
   SearchLight: SearchLight,
   Selector: Selector,
   Info: Info,
+  Vector: Vector,
+  Ai: Ai,
+
+  // Preview
+  Close: Close,
+  Expand: Expand,
+  Thumbnail1: Thumbnail1,
+  Thumbnail2: Thumbnail2,
 };

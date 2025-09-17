@@ -11,7 +11,7 @@ export default function ProductPreview() {
               alt="DocumentIcon"
               className="w-6 h-6 mr-2"
             />
-            <h2 className="text-sm font-medium text-gray-800">
+            <h2 className="text-sm font-medium text-[#181D27]">
               Product information
             </h2>
           </div>
@@ -33,7 +33,7 @@ export default function ProductPreview() {
               <button className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100">
                 <img src={ICONS.Close} alt="Close" />
               </button>
-              <h2 className="text-sm font-medium">Preview</h2>
+              <h2 className="text-lg font-semibold leading-[1%]">Preview</h2>
             </div>
             <button className="w-6 h-6 flex items-center justify-center rounded-full hover:bg-gray-100">
               <img src={ICONS.Expand} alt="Expand" />

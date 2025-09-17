@@ -1,3 +1,4 @@
+import { ICONS } from "../assets";
 import { Title } from "./Title";
 
 export function Input({
@@ -13,11 +14,19 @@ export function Input({
       <Title title={label} />
 
       {type === "textarea" ? (
-        <textarea
-          placeholder={placeholder}
-          rows={4}
-          className="w-full border border-[var(--border-primary)] rounded-lg px-3 py-2 focus:outline-none resize-none"
-        />
+        <div className="relative">
+          <textarea
+            placeholder={placeholder}
+            rows={4}
+            className="w-full border border-[var(--border-primary)] rounded-lg px-3 py-2 focus:outline-none resize-none"
+          />
+          <div className="absolute right-3 bottom-5 flex items-center gap-2 border border-[#d9d9d9] p-2 rounded-full">
+            <img src={ICONS.Ai} alt="icon" className="w-4 h-4" />
+            <span className="text-xs font-medium text-[#A5A5A5]">
+              Write with AI
+            </span>
+          </div>
+        </div>
       ) : (
         <div className="relative">
           <input

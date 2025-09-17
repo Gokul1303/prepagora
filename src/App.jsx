@@ -26,13 +26,23 @@ function App() {
           />
         </div>
 
-        <div className="flex-1 flex overflow-auto">
-          <div className="flex-1 lg:px-4">
-            <ProductForm />
+        <div className="flex-1 flex flex-col overflow-auto">
+          <div className="block md:hidden">
+            <SubSidebar
+              icon={ICONS.ArrowLeft}
+              title="Add Product"
+              list={subSidebar_list}
+            />
           </div>
 
-          <div className="hidden xl:block w-80 border-l bg-white">
-            <ProductPreview />
+          <div className="flex flex-col md:flex-row flex-1 overflow-x-auto">
+            <div className="flex-1 min-w-[90%] lg:min-w-[60%] px-4">
+              <ProductForm />
+            </div>
+
+            <div className="w-full lg:w-[35%] md:w-[60%] border-t md:border-t-0 md:border-l bg-white shrink-0">
+              <ProductPreview />
+            </div>
           </div>
         </div>
       </div>

@@ -4,9 +4,5 @@ import "./App.css";
 import "./styles/themes.css";
 
 const rootElement = document.getElementById("root");
-if (rootElement) {
-  const root = createRoot(rootElement);
-  root.render(<App />);
-} else {
-  console.error('Element with id "root" not found');
-}
+const root = createRoot(rootElement);
+root.render(<App />);
