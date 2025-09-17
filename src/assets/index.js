@@ -32,8 +32,8 @@ import DocumentIcon from "./info/document.svg";
 import SearchLight from "./info/ed.svg";
 import Selector from "./info/selector.svg";
 import Info from "./info/info.svg";
-import Vector from "./info/Vector.svg";
-import Ai from "./info/Ai.svg";
+import Vector from "./info/vector.svg";
+import Ai from "./info/ai.svg";
 
 // Preview
 import Close from "./preview/close.svg";
