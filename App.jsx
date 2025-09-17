@@ -1,6 +1,6 @@
 import "./App.css";
 import { ICONS } from "./assets";
-import { sidebar_list, subSidebar_list } from "./constants/lists";
+import { sidebar_list, subSidebar_list } from "./constants/Lists";
 
 import Navbar from "./components/Navbar";
 import SubSidebar from "./components/SubSidebar";
